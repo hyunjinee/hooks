@@ -6,4 +6,3 @@ tests
 CHANDELOG.md
 package.json
 tsconfig.json
-vite.config.ts
