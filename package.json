@@ -17,7 +17,8 @@
     "ci": "pnpm run lint && pnpm run test && pnpm run build",
     "build:cjs": "tsc -p tsconfig.build.json --module commonjs --outDir dist/cjs --target es5",
     "build:esm": "tsc -p tsconfig.build.json --module esNext --outDir dist/esm --target es6",
-    "clean": "rm -rf ./dist"
+    "clean": "rm -rf ./dist",
+    "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish"
   },
   "keywords": [
     "react",
