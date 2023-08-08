@@ -1,5 +1,11 @@
 # @hyunjin/hooks
 
+## 0.0.7
+
+### Patch Changes
+
+- 91a224a: useDocumentTitle
+
 ## 0.0.4
 
 ### Patch Changes
