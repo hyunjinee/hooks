@@ -1,3 +1,5 @@
 export * from './useDebounce/useDebounce'
+export * from './useDocumentTitle/useDocumentTitle'
 export * from './useIsomorphicLayoutEffect/useIsomorphicLayoutEffect'
+export * from './useOnClickOutside/useOnClickOutside'
 export * from './useToggle/useToggle'
