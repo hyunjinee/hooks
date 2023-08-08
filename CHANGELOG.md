@@ -1,5 +1,11 @@
 # @hyunjin/hooks
 
+## 0.0.4
+
+### Patch Changes
+
+- 627fc14: useDebounce
+
 ## 0.0.3
 
 ### Patch Changes
