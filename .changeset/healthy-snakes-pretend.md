@@ -1,0 +1,5 @@
+---
+'@hyunjin/hooks': patch
+---
+
+useOnClickOutside
