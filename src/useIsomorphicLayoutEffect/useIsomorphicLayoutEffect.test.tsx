@@ -6,6 +6,8 @@ import {
 } from '@testing-library/react'
 import { useIsomorphicLayoutEffect } from './useIsomorphicLayoutEffect'
 
+// TODO FIX TEST
+
 let useLayoutEffectMock: jest.SpyInstance
 let useEffectMock: jest.SpyInstance
 
