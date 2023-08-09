@@ -1,4 +1,4 @@
-# `@hyunjin/hooks`
+# @hyunjin/hooks
 
 ```bash
 npm install @hyunjin/hooks
