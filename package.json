@@ -18,7 +18,8 @@
     "build:cjs": "tsc -p tsconfig.build.json --module commonjs --outDir dist/cjs --target es5",
     "build:esm": "tsc -p tsconfig.build.json --module esNext --outDir dist/esm --target es6",
     "clean": "rm -rf ./dist",
-    "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish"
+    "release": "pnpm run lint && pnpm run test && pnpm run build && changeset publish",
+    "jsdoc": "jsdoc -c jsdoc.json"
   },
   "keywords": [
     "react",
@@ -46,6 +47,7 @@
     "eslint-plugin-tree-shaking": "^1.10.0",
     "jest": "^29.6.2",
     "jest-environment-jsdom": "^29.6.2",
+    "js-doc": "^0.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ts-jest": "^29.1.1",

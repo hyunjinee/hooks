@@ -1,0 +1,13 @@
+{
+  "plugins": ["plugins/markdown"],
+  "source": {
+    "include": ["src"],
+    "includePattern": ".(jsx|js|ts|tsx)$",
+    "exclude": ["node_modules"]
+  },
+  "sourceType": "module",
+  "opts": {
+    "encoding": "utf8",
+    "readme": "README.md"
+  }
+}
