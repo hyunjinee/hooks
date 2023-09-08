@@ -1,5 +1,11 @@
 # @hyunjin/hooks
 
+## 0.0.9
+
+### Patch Changes
+
+- 09d54c8: useUpdateEffect
+
 ## 0.0.8
 
 ### Patch Changes
