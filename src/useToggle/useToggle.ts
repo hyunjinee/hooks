@@ -1,12 +1,9 @@
 import { useCallback, useState } from 'react'
 
 /**
- *
- * @param {T | undefined} [defaultValue] toggle하고 싶은 초기값입니다.
- *
- * @returns {[T, () => void, typeof setValue]} [value, toggle, setValue]를 반환합니다.
- *
  * @description toggle을 위한 훅입니다.
+ * @param {T | undefined} [defaultValue] toggle하고 싶은 초기값입니다.
+//  * @returns {[T, () => void, typeof setValue]} [value, toggle, setValue]를 반환합니다.
  */
 export const useToggle = <T>(
   defaultValue?: T,

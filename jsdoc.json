@@ -2,7 +2,7 @@
   "plugins": ["plugins/markdown"],
   "source": {
     "include": ["src"],
-    "includePattern": ".(jsx|js|ts|tsx)$",
+    "includePattern": ".(jsx|js)$",
     "exclude": ["node_modules"]
   },
   "sourceType": "module",

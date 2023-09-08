@@ -2,6 +2,11 @@ import { RefObject, useEffect } from 'react'
 
 type Handler = (event: MouseEvent | TouchEvent) => void
 
+/**
+ *
+ * @param ref
+ * @param handler
+ */
 export const useOnClickOutside = <T extends HTMLElement = HTMLElement>(
   ref: RefObject<T>,
   handler: Handler,
