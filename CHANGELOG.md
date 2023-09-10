@@ -1,5 +1,11 @@
 # @hyunjin/hooks
 
+## 0.0.10
+
+### Patch Changes
+
+- efb3cdc: useUpdateEffect
+
 ## 0.0.9
 
 ### Patch Changes
