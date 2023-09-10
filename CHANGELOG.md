@@ -1,5 +1,11 @@
 # @hyunjin/hooks
 
+## 0.0.11
+
+### Patch Changes
+
+- e6412fb: why published package not include dist folder?
+
 ## 0.0.10
 
 ### Patch Changes
