@@ -1,5 +1,11 @@
 # @hyunjin/hooks
 
+## 0.0.12
+
+### Patch Changes
+
+- d0ba994: build using tsup
+
 ## 0.0.11
 
 ### Patch Changes
