@@ -11,3 +11,4 @@ npm install @hyunjin/hooks
 - useOnClickOutside
 - useUpdateEffect
 - useToggle
+- useSafeContext
