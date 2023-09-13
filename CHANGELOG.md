@@ -1,5 +1,11 @@
 # @hyunjin/hooks
 
+## 0.0.16
+
+### Patch Changes
+
+- d4ef23a: useSafeContext
+
 ## 0.0.14
 
 ### Patch Changes
