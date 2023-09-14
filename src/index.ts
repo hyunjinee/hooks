@@ -1,6 +1,7 @@
 export * from './useDebounce/useDebounce'
 export * from './useDocumentTitle/useDocumentTitle'
 export * from './useFetch/useFetch'
+export * from './useInterval/useInterval'
 export * from './useIsFirstRender/useIsFirstRender'
 export * from './useIsomorphicLayoutEffect/useIsomorphicLayoutEffect'
 export * from './useOnClickOutside/useOnClickOutside'
