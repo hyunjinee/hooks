@@ -21,4 +21,4 @@ export const canUseDOM = !!(
   typeof window.document.createElement !== 'undefined'
 )
 
-export const useIsomorphicLayoutEffect = canUseDOM ? useLayoutEffect : useEffect
+export const useIsomorphicEffect = canUseDOM ? useLayoutEffect : useEffect

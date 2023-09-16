@@ -4,7 +4,7 @@ import {
   cleanup,
   // act
 } from '@testing-library/react'
-import { useIsomorphicLayoutEffect } from './useIsomorphicLayoutEffect'
+import { useIsomorphicEffect } from './useIsomorphicEffect'
 
 // TODO FIX TEST
 
@@ -27,11 +27,11 @@ afterEach(() => {
 })
 
 function Component() {
-  useIsomorphicLayoutEffect(() => {}, [])
+  useIsomorphicEffect(() => {}, [])
   return <></>
 }
 
-describe('useIsomorphicLayoutEffect', () => {
+describe('useIsomorphicEffect', () => {
   test('브라우저에서는 LayoutEffect가 호출된다.', () => {
     // Simulate a browser environment
     // Object.defineProperty(global, 'window', { value: {} })
