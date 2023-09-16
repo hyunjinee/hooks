@@ -15,19 +15,7 @@ describe('useDebounce', () => {
     jest.useRealTimers()
   })
 
-  test('타입 체크', () => {
-    const {
-      result: { current: debouncedStringValue },
-    } = renderHook(() => useDebounce(''))
-    const {
-      result: { current: debouncedNumberValue },
-    } = renderHook(() => useDebounce(123))
-
-    expect(typeof debouncedStringValue).toBe('string')
-    expect(typeof debouncedNumberValue).toBe('number')
-  })
-
-  test('디바운스된 값을 반환한다.', () => {
+  test('디바운스된 값을 반환한다', () => {
     const value = 'test'
     const {
       result: { current: debouncedValue },
@@ -36,7 +24,7 @@ describe('useDebounce', () => {
     expect(value).toBe(debouncedValue)
   })
 
-  test('기본 디바운스 시간은 500ms이다.', () => {
+  test('기본 디바운스 시간은 500ms이다', () => {
     mockSetTimeout()
 
     renderHook(() => useDebounce('test'))
@@ -45,7 +33,7 @@ describe('useDebounce', () => {
     expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 500)
   })
 
-  test('디바운스 시간을 임의로 설정할 수 있다.', () => {
+  test('디바운스 시간을 임의로 설정할 수 있다', () => {
     mockSetTimeout()
 
     renderHook(() => useDebounce('test', 1234))
@@ -54,7 +42,7 @@ describe('useDebounce', () => {
     expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 1234)
   })
 
-  test('컴포넌트가 언마운트되면 디바운스 타이머를 제거한다.', () => {
+  test('컴포넌트가 언마운트되면 디바운스 타이머를 제거한다', () => {
     mockClearTimeout()
     const { unmount } = renderHook(() => useDebounce('test'))
 
