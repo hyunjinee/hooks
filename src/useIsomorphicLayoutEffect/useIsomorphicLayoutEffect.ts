@@ -1,9 +1,7 @@
 import { useEffect, useLayoutEffect } from 'react'
 
 /**
- *  Description from React-Redux Source Code
- *
- *  Match Logic w/ React Source code. shared/ExecutionEnvironment
+ *  React의 코드와 로직 맞춤. shared/ExecutionEnvironment
  *
  *  React currently throws a warning when using useLayoutEffect on the server.
  *  To get around it, we can conditionally useEffect on the server (no-op) and
@@ -13,6 +11,9 @@ import { useEffect, useLayoutEffect } from 'react'
  *  which may cause missed updates; we also must ensure the store subscription
  *  is created synchronously, otherwise a store update may occur before the
  *  subscription is created and an inconsistent state may be observed
+ *
+ * reference
+ * - React Redux 소스코드
  */
 export const canUseDOM = !!(
   typeof window !== 'undefined' &&
