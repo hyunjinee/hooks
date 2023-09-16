@@ -17,8 +17,7 @@
     "watch": "tsup src/index.ts --format cjs,esm --dts --watch",
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "clean": "rm -rf ./dist",
-    "release": "changeset publish",
-    "jsdoc": "jsdoc -c jsdoc.json dist/esm/**"
+    "release": "changeset publish"
   },
   "keywords": [
     "react",

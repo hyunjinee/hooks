@@ -4,7 +4,9 @@ import { useIsomorphicEffect } from '../useIsomorphicEffect/useIsomorphicEffect'
 export const useLatestValue = <T>(value: T) => {
   const cache = useRef(value)
 
-  useIsomorphicEffect(() => {})
+  useIsomorphicEffect(() => {
+    cache.current = value
+  }, [value])
 
   return cache
 }
