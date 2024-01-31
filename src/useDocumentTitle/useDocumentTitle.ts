@@ -1,4 +1,4 @@
-import { useIsomorphicEffect } from '..'
+import { useIsomorphicEffect } from '../useIsomorphicEffect/useIsomorphicEffect'
 
 /**
  * 현재 문서에 title을 설정합니다.

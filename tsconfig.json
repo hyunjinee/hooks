@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
     "jsx": "react-jsx",
     "declaration": true,
     "pretty": true,
     "strict": true,
     "esModuleInterop": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+    "lib": ["ESNext", "DOM"]
   },
   "exclude": ["node_modules", "dist"]
 }

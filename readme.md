@@ -9,7 +9,7 @@ npm install @hyunjin/hooks
 - useDebounce
 - useDocumentTitle
 - useEventListener (TODO)
-- useFetch (TODO)
+- useFetch
 - useForceUpdate
 - useHover
 - useInterval
