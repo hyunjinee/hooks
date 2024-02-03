@@ -19,3 +19,4 @@ npm install @hyunjin/hooks
 - useSafeContext
 - useToggle
 - useUpdateEffect
+- useNetworkState
