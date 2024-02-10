@@ -5,18 +5,29 @@ const getNetworkState = () => {
 }
 
 // subscribe 함수 수정필요
-const subscribe = (onChange: () => void) => {
-  window.addEventListener('online', onChange)
-  window.addEventListener('offline', onChange)
+const subscribe = (callback: () => void) => {
+  window.addEventListener('online', callback)
+  window.addEventListener('offline', callback)
 
   return () => {
-    window.removeEventListener('online', onChange)
-    window.removeEventListener('offline', onChange)
+    window.removeEventListener('online', callback)
+    window.removeEventListener('offline', callback)
   }
 }
 
+const getServerSnapshot = () => {
+  return true
+}
+
+/**
+ * https://react.dev/reference/react/useSyncExternalStore
+ */
 export const useNetworkState = () => {
-  const state = useSyncExternalStore(subscribe, getNetworkState)
+  const state = useSyncExternalStore(
+    subscribe,
+    getNetworkState,
+    getServerSnapshot,
+  )
 
   return state
 }
