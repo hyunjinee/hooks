@@ -4,6 +4,7 @@
 npm install @hyunjin/hooks
 ```
 
+- [useBoolean]()
 - useCallbackOnce
 - useCallbackRef
 - useDebounce
