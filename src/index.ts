@@ -9,6 +9,7 @@ export * from './useInterval/useInterval';
 export * from './useIsClient/useIsClient';
 export * from './useIsFirstRender/useIsFirstRender';
 export * from './useIsomorphicEffect/useIsomorphicEffect';
+export * from './useIsScrolled/useIsScrolled';
 export * from './useLatestValue/useLatestValue';
 export * from './useMount/useMount';
 export * from './useNetworkState/useNetworkState';
