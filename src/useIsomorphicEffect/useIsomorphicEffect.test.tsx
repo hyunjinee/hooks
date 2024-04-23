@@ -1,34 +1,34 @@
-import React from 'react'
+import React from 'react';
 import {
   render,
   cleanup,
   // act
-} from '@testing-library/react'
-import { useIsomorphicEffect } from './useIsomorphicEffect'
+} from '@testing-library/react';
+import { useIsomorphicEffect } from './useIsomorphicEffect';
 
 // TODO FIX TEST
 
-let useLayoutEffectMock: jest.SpyInstance
-let useEffectMock: jest.SpyInstance
+let useLayoutEffectMock: jest.SpyInstance;
+let useEffectMock: jest.SpyInstance;
 
 beforeAll(() => {
   useLayoutEffectMock = jest
     .spyOn(React, 'useLayoutEffect')
-    .mockImplementation(React.useEffect)
+    .mockImplementation(React.useEffect);
   useEffectMock = jest
     .spyOn(React, 'useEffect')
-    .mockImplementation(React.useEffect)
-})
+    .mockImplementation(React.useEffect);
+});
 
 afterEach(() => {
-  cleanup()
-  useLayoutEffectMock.mockClear()
-  useEffectMock.mockClear()
-})
+  cleanup();
+  useLayoutEffectMock.mockClear();
+  useEffectMock.mockClear();
+});
 
 function Component() {
-  useIsomorphicEffect(() => {}, [])
-  return <></>
+  useIsomorphicEffect(() => {}, []);
+  return <></>;
 }
 
 describe('useIsomorphicEffect', () => {
@@ -41,15 +41,15 @@ describe('useIsomorphicEffect', () => {
     // })
     // expect(useLayoutEffectMock).toHaveBeenCalled()
     // expect(useEffectMock).not.toHaveBeenCalled()
-  })
+  });
 
   test('should use useEffect on the server', () => {
     // Simulate a server environment
     // Object.defineProperty(global, 'window', { value: undefined })
 
-    render(<Component />)
+    render(<Component />);
 
     // expect(useEffectMock).toHaveBeenCalled()
     // expect(useLayoutEffectMock).not.toHaveBeenCalled()
-  })
-})
+  });
+});

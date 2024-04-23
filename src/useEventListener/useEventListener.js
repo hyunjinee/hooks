@@ -1,5 +1,5 @@
-import { useEffect } from 'react'
-import { RefObject } from 'react'
+import { useEffect } from 'react';
+import { RefObject } from 'react';
 // https://github.com/donavon/use-event-listener/blob/develop/src/index.js
 
 /**
@@ -23,27 +23,27 @@ export const useEventListener = (
   element = global,
   options = {},
 ) => {
-  const savedHandler = useRef()
-  const { capture, passive, once } = options
+  const savedHandler = useRef();
+  const { capture, passive, once } = options;
 
   useEffect(() => {
-    savedHandler.current = handler
-  }, [handler])
+    savedHandler.current = handler;
+  }, [handler]);
 
   useEffect(() => {
-    const isSupported = element && element.addEventListener
+    const isSupported = element && element.addEventListener;
 
     if (!isSupported) {
-      return
+      return;
     }
 
-    const eventListener = (event) => savedHandler.current(event)
-    const opts = { capture, passive, once }
+    const eventListener = (event) => savedHandler.current(event);
+    const opts = { capture, passive, once };
 
-    element.addEventListener(eventName, eventListener, opts)
+    element.addEventListener(eventName, eventListener, opts);
 
     return () => {
-      element.removeEventListener(eventName, eventListener, opts)
-    }
-  }, [element, eventName, capture, passive, once])
-}
+      element.removeEventListener(eventName, eventListener, opts);
+    };
+  }, [element, eventName, capture, passive, once]);
+};

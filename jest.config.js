@@ -1,4 +1,4 @@
-const ignoreDirs = ['dist/', 'node_modules/']
+const ignoreDirs = ['dist/', 'node_modules/'];
 
 /** @type {Config.InitialOptions} */
 module.exports = {
@@ -15,4 +15,4 @@ module.exports = {
   coverageDirectory: '<rootDir>/coverage/',
   testMatch: ['<rootDir>/src/**/*.test.ts', '<rootDir>/src/**/*.test.tsx'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-}
+};

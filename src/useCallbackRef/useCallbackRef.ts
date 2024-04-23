@@ -1,13 +1,13 @@
-import { useRef, useEffect, useMemo } from 'react'
+import { useRef, useEffect, useMemo } from 'react';
 
 export const useCallbackRef = <T extends (...args: unknown[]) => unknown>(
   callback: T | undefined,
 ): T => {
-  const callbackRef = useRef(callback)
+  const callbackRef = useRef(callback);
 
   useEffect(() => {
-    callbackRef.current = callback
-  })
+    callbackRef.current = callback;
+  });
 
-  return useMemo(() => ((...args) => callbackRef.current?.(...args)) as T, [])
-}
+  return useMemo(() => ((...args) => callbackRef.current?.(...args)) as T, []);
+};

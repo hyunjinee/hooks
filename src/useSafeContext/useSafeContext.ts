@@ -1,36 +1,36 @@
-import { useContext, type Context } from 'react'
+import { useContext, type Context } from 'react';
 
-type CustomMessage = string | ((displayName?: string) => string)
+type CustomMessage = string | ((displayName?: string) => string);
 
 export const useSafeContext = <T>(
   unsafeContext: Context<T>,
   customMessage?: CustomMessage,
 ) => {
-  const context = useContext<T>(unsafeContext)
+  const context = useContext<T>(unsafeContext);
 
   if (!context) {
-    const displayName = unsafeContext.displayName
+    const displayName = unsafeContext.displayName;
 
-    let errorMessage: string
+    let errorMessage: string;
 
     switch (typeof customMessage) {
       case 'string':
-        errorMessage = customMessage
-        break
+        errorMessage = customMessage;
+        break;
 
       case 'function':
-        errorMessage = customMessage(displayName)
-        break
+        errorMessage = customMessage(displayName);
+        break;
 
       default: {
-        const contextName = displayName || 'a context'
-        errorMessage = `You are trying to use ${contextName} outside of the provider`
-        break
+        const contextName = displayName || 'a context';
+        errorMessage = `You are trying to use ${contextName} outside of the provider`;
+        break;
       }
     }
 
-    throw new Error(errorMessage)
+    throw new Error(errorMessage);
   }
 
-  return context as NonNullable<T>
-}
+  return context as NonNullable<T>;
+};

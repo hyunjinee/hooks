@@ -1,4 +1,4 @@
-import { useIsomorphicEffect } from '../useIsomorphicEffect/useIsomorphicEffect'
+import { useIsomorphicEffect } from '../useIsomorphicEffect/useIsomorphicEffect';
 
 /**
  * 현재 문서에 title을 설정합니다.
@@ -7,6 +7,6 @@ import { useIsomorphicEffect } from '../useIsomorphicEffect/useIsomorphicEffect'
  */
 export const useDocumentTitle = (title: string) => {
   useIsomorphicEffect(() => {
-    window.document.title = title
-  }, [title])
-}
+    window.document.title = title;
+  }, [title]);
+};

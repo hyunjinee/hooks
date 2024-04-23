@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect } from 'react'
+import { useEffect, useLayoutEffect } from 'react';
 
 /**
  *  React의 코드와 로직 맞춤. shared/ExecutionEnvironment
@@ -19,6 +19,6 @@ export const canUseDOM = !!(
   typeof window !== 'undefined' &&
   typeof window.document !== 'undefined' &&
   typeof window.document.createElement !== 'undefined'
-)
+);
 
-export const useIsomorphicEffect = canUseDOM ? useLayoutEffect : useEffect
+export const useIsomorphicEffect = canUseDOM ? useLayoutEffect : useEffect;

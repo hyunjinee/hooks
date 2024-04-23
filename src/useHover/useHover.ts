@@ -1,17 +1,17 @@
-import { useState, type RefObject } from 'react'
+import { useState, type RefObject } from 'react';
 
 export const useHover = <T extends HTMLElement = HTMLElement>(
   ref: RefObject<T>,
 ) => {
-  const [value, setValue] = useState(false)
+  const [value, setValue] = useState(false);
 
-  ref
+  ref;
 
-  const handleMouseEnter = () => setValue(true)
-  const handleMouseLeave = () => setValue(false)
+  const handleMouseEnter = () => setValue(true);
+  const handleMouseLeave = () => setValue(false);
 
-  handleMouseEnter
-  handleMouseLeave
+  handleMouseEnter;
+  handleMouseLeave;
 
-  return value
-}
+  return value;
+};

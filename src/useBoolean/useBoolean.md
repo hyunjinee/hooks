@@ -1,3 +1,5 @@
+# useBoolean
+
 ```tsx
 import { useBoolean } from '@hyunjin/hooks';
 
@@ -11,7 +13,7 @@ const Component = () => {
       </div>
       <button onClick={setTrue}>set true</button>
       <button onClick={setFalse}>set false</button>
-      <button onClick={toggle}>토클</button>
+      <button onClick={toggle}>토글</button>
     </>
   );
 };

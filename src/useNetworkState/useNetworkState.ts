@@ -1,23 +1,23 @@
-import { useSyncExternalStore } from 'react'
+import { useSyncExternalStore } from 'react';
 
 const getNetworkState = () => {
-  return navigator.onLine
-}
+  return navigator.onLine;
+};
 
 // subscribe 함수 수정필요
 const subscribe = (callback: () => void) => {
-  window.addEventListener('online', callback)
-  window.addEventListener('offline', callback)
+  window.addEventListener('online', callback);
+  window.addEventListener('offline', callback);
 
   return () => {
-    window.removeEventListener('online', callback)
-    window.removeEventListener('offline', callback)
-  }
-}
+    window.removeEventListener('online', callback);
+    window.removeEventListener('offline', callback);
+  };
+};
 
 const getServerSnapshot = () => {
-  return true
-}
+  return true;
+};
 
 /**
  * https://react.dev/reference/react/useSyncExternalStore
@@ -27,7 +27,7 @@ export const useNetworkState = () => {
     subscribe,
     getNetworkState,
     getServerSnapshot,
-  )
+  );
 
-  return state
-}
+  return state;
+};

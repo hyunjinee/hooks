@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useState } from 'react';
 
 /**
  * @description toggle을 위한 훅입니다.
@@ -8,8 +8,8 @@ import { useCallback, useState } from 'react'
 export const useToggle = <T>(
   defaultValue?: T,
 ): [boolean, () => void, typeof setValue] => {
-  const [value, setValue] = useState(!!defaultValue)
-  const toggle = useCallback(() => setValue((prev) => !prev), [])
+  const [value, setValue] = useState(!!defaultValue);
+  const toggle = useCallback(() => setValue((prev) => !prev), []);
 
-  return [value, toggle, setValue]
-}
+  return [value, toggle, setValue];
+};
