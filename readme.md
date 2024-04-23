@@ -7,7 +7,7 @@ npm install @hyunjin/hooks
 ## docs
 
 - [useBoolean](https://github.com/hyunjinee/hooks/blob/main/src/useBoolean/useBoolean.md)
-- useCallbackOnce
+- [useCallbackOnce](https://github.com/hyunjinee/hooks/blob/main/src/useCallbackOnce/useCallbackOnce.md)
 - useCallbackRef
 - useDebounce
 - useDocumentTitle
