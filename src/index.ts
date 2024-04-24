@@ -17,4 +17,5 @@ export * from './useOnClickOutside/useOnClickOutside';
 export * from './useSafeContext/useSafeContext';
 export * from './useToggle/useToggle';
 export * from './useUpdateEffect/useUpdateEffect';
+export * from './useUpload/useUpload';
 export * from './useWindowSize/useWindowSize';
