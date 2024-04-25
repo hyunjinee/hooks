@@ -26,5 +26,7 @@ export const useUpload = () => {
     return promise;
   };
 
-  return [upload, file] as [typeof upload, typeof file];
+  return { upload, file };
+
+  // return [upload, file] as [typeof upload, typeof file];
 };
