@@ -5,6 +5,7 @@ export const useCallbackOnce = <F extends (...args: unknown[]) => void>(
   deps: DependencyList,
 ) => {
   const hasFired = useRef(false);
+
   const memoizedCallback = useCallback((...args: Parameters<F>) => {
     if (hasFired.current) {
       return;

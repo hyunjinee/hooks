@@ -32,7 +32,7 @@ describe('useCallbackOnce', () => {
     expect(callback).toHaveBeenCalledTimes(1);
   });
 
-  it('리렌더링 되었을 때는 실행되지 않아야한다', () => {
+  test('리렌더링 되었을 때는 실행되지 않아야한다', () => {
     const callback = jest.fn();
     const { rerender } = render(
       <TestComponent callback={callback} deps={[1]} />,
