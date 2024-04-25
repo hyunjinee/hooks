@@ -1,5 +1,6 @@
 export * from './useBoolean/useBoolean';
 export * from './useCallbackOnce/useCallbackOnce';
+export * from './useCopyToClipboard/useCopyToClipboard';
 export * from './useDebounce/useDebounce';
 export * from './useDocumentTitle/useDocumentTitle';
 export * from './useFetch/useFetch';
