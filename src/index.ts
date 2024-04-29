@@ -16,6 +16,7 @@ export * from './useLatestValue/useLatestValue';
 export * from './useMount/useMount';
 export * from './useNetworkState/useNetworkState';
 export * from './useOnClickOutside/useOnClickOutside';
+export * from './useOverlay';
 export * from './useSafeContext/useSafeContext';
 export * from './useToggle/useToggle';
 export * from './useUpdateEffect/useUpdateEffect';
