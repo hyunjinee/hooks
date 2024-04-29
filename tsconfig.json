@@ -6,6 +6,7 @@
     "strict": true,
     "esModuleInterop": true,
     "noUncheckedIndexedAccess": true,
+    "downlevelIteration": true,
     "lib": ["ESNext", "DOM"]
   },
   "exclude": ["node_modules", "dist"]
