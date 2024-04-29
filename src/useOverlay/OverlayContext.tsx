@@ -10,10 +10,10 @@ import {
   Fragment,
 } from 'react';
 
-interface OverlayContextValue {
+type OverlayContextValue = {
   openOverlay: (id: string, element: ReactNode) => void;
   closeOverlay: (id: string) => void;
-}
+};
 
 const OverlayContext = createContext<OverlayContextValue | null>(null);
 

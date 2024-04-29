@@ -1,10 +1,10 @@
 import { useRef } from 'react';
-import { useIsomorphicEffect } from '../useIsomorphicEffect/useIsomorphicEffect';
+import { useIsomorphicLayoutEffect } from '../useIsomorphicLayoutEffect/useIsomorphicLayoutEffect';
 
 export const useLatestValue = <T>(value: T) => {
   const cache = useRef(value);
 
-  useIsomorphicEffect(() => {
+  useIsomorphicLayoutEffect(() => {
     cache.current = value;
   }, [value]);
 

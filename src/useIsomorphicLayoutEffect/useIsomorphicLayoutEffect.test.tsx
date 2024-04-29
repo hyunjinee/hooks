@@ -4,7 +4,7 @@ import {
   cleanup,
   // act
 } from '@testing-library/react';
-import { useIsomorphicEffect } from './useIsomorphicEffect';
+import { useIsomorphicLayoutEffect } from './useIsomorphicLayoutEffect';
 
 // TODO FIX TEST
 
@@ -27,7 +27,7 @@ afterEach(() => {
 });
 
 function Component() {
-  useIsomorphicEffect(() => {}, []);
+  useIsomorphicLayoutEffect(() => {}, []);
   return <></>;
 }
 

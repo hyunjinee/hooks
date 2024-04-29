@@ -10,7 +10,7 @@ export * from './useInterval/useInterval';
 export * from './useIsClient/useIsClient';
 export * from './useIsFirstRender/useIsFirstRender';
 export * from './useIsMounted/useIsMounted';
-export * from './useIsomorphicEffect/useIsomorphicEffect';
+export * from './useIsomorphicLayoutEffect/useIsomorphicLayoutEffect';
 export * from './useIsScrolled/useIsScrolled';
 export * from './useLatestValue/useLatestValue';
 export * from './useMount/useMount';
