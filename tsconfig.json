@@ -7,7 +7,9 @@
     "esModuleInterop": true,
     "noUncheckedIndexedAccess": true,
     "downlevelIteration": true,
-    "lib": ["ESNext", "DOM"]
+    "lib": ["ESNext", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler"
   },
   "exclude": ["node_modules", "dist"]
 }
