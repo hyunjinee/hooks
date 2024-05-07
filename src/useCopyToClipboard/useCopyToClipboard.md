@@ -1,6 +1,6 @@
 # useCopyToClipboard
 
-useCopyToClipboard는 사용자가 텍스트를 클립보드에 복사할 수 있도록 돕는 훅이다. 이 훅은 클립보드에 복사하는 함수와 가장 최근에 복사된 텍스트를 추적하는 상태를 제공한다.
+useCopyToClipboard 흑은 사용자가 텍스트를 클립보드에 복사할 수 있도록 돕는 훅이다. 이 훅은 클립보드에 복사하는 함수와 가장 최근에 복사된 텍스트를 추적하는 상태를 제공한다.
 
 ## type
 
@@ -17,6 +17,8 @@ const useCopyToClipboard: () => {
 ## example
 
 ```tsx
+import { useCopyToClipboard } from '@hyunjin/hooks';
+
 const Component = () => {
   const { copiedText, copy } = useCopyToClipboard();
   const textToCopy = '이 텍스트를 클립보드에 복사합니다.';

@@ -10,7 +10,7 @@ npm install @hyunjin/hooks
 - [useCallbackOnce](https://github.com/hyunjinee/hooks/blob/main/src/useCallbackOnce/useCallbackOnce.md)
 - [useCopyToClipboard](https://github.com/hyunjinee/hooks/blob/main/src/useCopyToClipboard/useCopyToClipboard.md)
 - [useDebounce](https://github.com/hyunjinee/hooks/blob/main/src/useDebounce/useDebounce.md)
-- useDocumentTitle
+- [useDocumentTitle](https://github.com/hyunjinee/hooks/blob/main/src/useDocumentTitle/useDocumentTitle.md)
 - useEventListener (TODO)
 - useFetch
 - useForceUpdate
