@@ -1,3 +1,4 @@
+export * from './useBodyScrollLock/useBodyScrollLock';
 export * from './useBoolean/useBoolean';
 export * from './useCallbackOnce/useCallbackOnce';
 export * from './useCopyToClipboard/useCopyToClipboard';
@@ -12,7 +13,9 @@ export * from './useIsFirstRender/useIsFirstRender';
 export * from './useIsMounted/useIsMounted';
 export * from './useIsomorphicLayoutEffect/useIsomorphicLayoutEffect';
 export * from './useIsScrolled/useIsScrolled';
+export * from './useKeyPress/useKeypress';
 export * from './useLatestValue/useLatestValue';
+export * from './useLockScroll/useLockScroll';
 export * from './useMount/useMount';
 export * from './useNetworkState/useNetworkState';
 export * from './useOnClickOutside/useOnClickOutside';
