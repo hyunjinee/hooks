@@ -11,9 +11,6 @@ npm install @hyunjin/hooks
 - [useCopyToClipboard](https://github.com/hyunjinee/hooks/blob/main/src/useCopyToClipboard/useCopyToClipboard.md)
 - [useDebounce](https://github.com/hyunjinee/hooks/blob/main/src/useDebounce/useDebounce.md)
 - [useDocumentTitle](https://github.com/hyunjinee/hooks/blob/main/src/useDocumentTitle/useDocumentTitle.md)
-- useEventListener (TODO)
-- useFetch
-- useForceUpdate
 - useHover
 - useInterval
 - useIsFirstRender
