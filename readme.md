@@ -4,7 +4,7 @@
 npm install @hyunjin/hooks
 ```
 
-## docs
+## Documentation
 
 - [useBodyScrollLock](https://github.com/hyunjinee/hooks/blob/main/src/useBodyScrollLock/useBodyScrollLock.md)
 - [useBoolean](https://github.com/hyunjinee/hooks/blob/main/src/useBoolean/useBoolean.md)

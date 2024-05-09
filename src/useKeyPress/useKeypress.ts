@@ -18,7 +18,6 @@ export const useKeyPress = ({
   active?: boolean;
 }) => {
   useEffect(() => {
-    // Ensure targetCode is always an array to simplify checking
     const targetCodesArray = Array.isArray(targetCode)
       ? targetCode
       : [targetCode];
