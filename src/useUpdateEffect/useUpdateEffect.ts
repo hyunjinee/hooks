@@ -1,6 +1,5 @@
-import { type EffectCallback, type DependencyList } from 'react';
+import { useEffect, type EffectCallback, type DependencyList } from 'react';
 
-import { useEffect } from 'react';
 import { useIsFirstRender } from '../useIsFirstRender/useIsFirstRender';
 
 export const useUpdateEffect = (
