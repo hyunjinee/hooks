@@ -4,6 +4,7 @@ export * from './useCallbackOnce/useCallbackOnce';
 export * from './useCopyToClipboard/useCopyToClipboard';
 export * from './useDebounce/useDebounce';
 export * from './useDocumentTitle/useDocumentTitle';
+export * from './useEventListener/useEventListener';
 export * from './useFetch/useFetch';
 export * from './useForceUpdate/useForceUpdate';
 export * from './useInterval/useInterval';

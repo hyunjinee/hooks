@@ -12,5 +12,6 @@ npm install @hyunjin/hooks
 - [useCopyToClipboard](https://github.com/hyunjinee/hooks/blob/main/src/useCopyToClipboard/useCopyToClipboard.md)
 - [useDebounce](https://github.com/hyunjinee/hooks/blob/main/src/useDebounce/useDebounce.md)
 - [useDocumentTitle](https://github.com/hyunjinee/hooks/blob/main/src/useDocumentTitle/useDocumentTitle.md)
+- [useIsClient.md](https://github.com/hyunjinee/hooks/blob/main/src/useIsClient/useIsClient.md)
 - [useOnClickOutside](https://github.com/hyunjinee/hooks/blob/main/src/useOnClickOutside/useOnClickOutside.md)
 - [useSafeContext](https://github.com/hyunjinee/hooks/blob/main/src/useSafeContext/useSafeContext.md)
