@@ -4,6 +4,7 @@ type WindowSize = {
   width: number;
   height: number;
 };
+
 export const useWindowSize = () => {
   const [windowSize, setWindowSize] = useState<WindowSize | undefined>();
 
@@ -23,6 +24,7 @@ export const useWindowSize = () => {
   }, []);
   return windowSize;
 };
+
 // import { useState } from 'react';
 // import { useIsomorphicEffect } from '../useIsomorphicEffect/useIsomorphicEffect';
 
