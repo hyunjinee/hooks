@@ -13,6 +13,7 @@ npm install @hyunjin/hooks
 - [useDebounce](https://github.com/hyunjinee/hooks/blob/main/src/useDebounce/useDebounce.md)
 - [useDocumentTitle](https://github.com/hyunjinee/hooks/blob/main/src/useDocumentTitle/useDocumentTitle.md)
 - [useIsClient](https://github.com/hyunjinee/hooks/blob/main/src/useIsClient/useIsClient.md)
+- [useForceUpdate](https://github.com/hyunjinee/hooks/blob/main/src/useForceUpdate/useForceUpdate.md)
 - [useIsFirstRender](https://github.com/hyunjinee/hooks/blob/main/src/useIsFirstRender/useIsFirstRender.md)
 - [useIsomorphicLayoutEffect](https://github.com/hyunjinee/hooks/blob/main/src/useIsomorphicLayoutEffect/useIsomorphicLayoutEffect.md)
 - [useOnClickOutside](https://github.com/hyunjinee/hooks/blob/main/src/useOnClickOutside/useOnClickOutside.md)

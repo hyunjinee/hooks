@@ -1,6 +1,6 @@
 import { renderHook } from '@testing-library/react-hooks';
-import { useForceUpdate } from './useForceUpdate';
 import { fireEvent, render, screen } from '@testing-library/react';
+import { useForceUpdate } from './useForceUpdate';
 
 let renderCount = 0;
 
