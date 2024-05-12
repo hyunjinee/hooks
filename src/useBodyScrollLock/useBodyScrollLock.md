@@ -1,6 +1,6 @@
 # useBodyScrollLock
 
-`useBodyScrollLock` 훅은 활성화되면 본문 스크롤을 잠그는 훅입니다.
+`useBodyScrollLock` 훅은 활성화되면 body 스크롤을 잠그는 훅입니다.
 
 주로 Overlay를 띄울 때 사용합니다.
 
