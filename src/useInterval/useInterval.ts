@@ -10,7 +10,7 @@ type TimerHandler = (...args: unknown[]) => void;
  * @param delay - 함수가 실행되는 간격, null로 설정하면 setInterval이 멈춥니다.
  */
 export const useInterval = (callback: TimerHandler, delay: Delay) => {
-  const savedCallbackRef = useRef<TimerHandler>();
+  const savedCallbackRef = useRef<TimerHandler>(callback);
 
   useEffect(() => {
     savedCallbackRef.current = callback;

@@ -1,6 +1,6 @@
 # [@hyunjin/hooks](https://www.npmjs.com/package/@hyunjin/hooks)
 
-```bash
+```
 npm install @hyunjin/hooks
 ```
 
